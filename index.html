@@ -14,7 +14,7 @@
         .container {
             background-image: url('https://wallpaperaccess.com/full/757545.jpg');
             background-size: cover;
-            scroll-behaviour: smooth;
+            scroll-behavior: smooth;
             background-position: center;
             height: 100vh;
             display: flex;
@@ -23,6 +23,28 @@
             align-items: center;
             text-align: center;
             padding: 0 20px;
+        }
+        .menu-bar {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            overflow: hidden;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .menu-bar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+        .menu-bar a:hover {
+            background-color: #4CAF50;
         }
         h1 {
             font-size: 3em;
@@ -51,6 +73,11 @@
     </style>
 </head>
 <body>
+    <div class="menu-bar">
+        <a href="#">Home</a>
+        <a href="mailto:nireeshchowdary27@gmail.com">Email:nireeshchowdary27@gmail.com</a>
+        <a href="tel:+91 93910 83189">Contact:+91 93910 83189</a>
+    </div>
     <div class="container">
         <h1>TREE PLANTATION INITIATIVE</h1>
         <p>Help us plant trees and make the world greener and healthier. Together we can make the world a greener place.</p>
@@ -58,4 +85,3 @@
     </div>
 </body>
 </html>
-
